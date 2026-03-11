@@ -1,0 +1,18 @@
+.guaranteesBlock {
+  display: grid;
+
+  gap: 3rem;
+}
+
+.container {
+  background-color: var(--color-light--2);
+}
+
+@media screen and (min-width: 1024px) {
+  .guaranteesBlock {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 36px;
+    grid-row-gap: 036px;
+  }
+}

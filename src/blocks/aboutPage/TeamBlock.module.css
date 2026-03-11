@@ -1,0 +1,47 @@
+.teamBlock {
+  text-align: center;
+  background-color: RGBA(3, 103, 166, 0.09);
+}
+
+.grid {
+  display: grid;
+}
+
+.icon {
+  vertical-align: top;
+}
+.iconTagline {
+  color: var(--color-brand-hover--1);
+  font-weight: 600;
+}
+
+.heading {
+  position: relative;
+  font-weight: 400;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3em;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 70px;
+  height: 0.15rem;
+  background-color: var(--color-brand-hover--1);
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+}

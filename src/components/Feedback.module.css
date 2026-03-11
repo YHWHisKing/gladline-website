@@ -1,0 +1,65 @@
+.wrapper {
+  padding: 2.4rem 3rem;
+
+  border-radius: var(--border-radius-md);
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.success {
+  border: 1px solid #09f60526;
+  background-color: rgba(6, 245, 6, 0.098);
+}
+.success > h2 {
+  color: green;
+  margin-bottom: 1rem;
+}
+
+.error {
+  border: 1px solid #f6050526;
+  background-color: rgba(245, 6, 6, 0.098);
+}
+
+.error > h2 {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.message {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.message > span {
+  align-self: center;
+}
+
+.successIcon {
+  color: green;
+}
+.errorIcon {
+  color: red;
+}
+
+.successIcon,
+.errorIcon {
+  flex-shrink: 0;
+}
+
+/* retry button shown below error message */
+.retryBtn {
+  margin-top: 1rem;
+  padding: 0.8rem 1.6rem;
+  background-color: red;
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 700px) {
+  .retryBtn {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,16 @@
+.commitmentValue {
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #f39542;
+}
+
+.heading {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+.text {
+  line-height: 1.7;
+  font-size: 1.7rem;
+}

@@ -1,0 +1,83 @@
+.container {
+  text-align: left;
+  font-size: 1.4rem;
+  padding-left: 1rem;
+}
+
+.heading {
+  font-size: 2rem;
+  margin: 4rem 0 2rem;
+  font-weight: 700;
+}
+
+.text {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.img {
+  width: 100%;
+  border-radius: 7px;
+  justify-self: center;
+  margin-top: 5rem;
+}
+
+.icon {
+  color: var(--color-brand-hover--1);
+  margin-right: 5px;
+}
+
+.iconList {
+  list-style: none;
+}
+
+.iconList > li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.text,
+.iconList {
+  font-size: 1.35rem;
+}
+
+.cleaningButton {
+  display: block;
+  width: fit-content;
+  margin: 2rem auto 0;
+  font-weight: 400;
+  font-size: 1.3rem;
+  padding: 1.2rem 2.2rem;
+}
+
+@media screen and (min-width: 540px) {
+  .img {
+    max-width: 490px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    align-self: center;
+  }
+
+  .container:nth-of-type(even) {
+    order: 2;
+  }
+
+  .img {
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cleaningButton {
+    margin: 2rem 0;
+  }
+
+  .text,
+  .iconList {
+    font-size: 1.4rem;
+  }
+}

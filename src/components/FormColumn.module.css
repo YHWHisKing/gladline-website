@@ -1,0 +1,15 @@
+.formColumn {
+  width: 100%;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  font-weight: 700;
+}
+
+/* @media screen and (min-width: 1024px) {
+  .submitColumn {
+    grid-column: span 2;
+  }
+} */

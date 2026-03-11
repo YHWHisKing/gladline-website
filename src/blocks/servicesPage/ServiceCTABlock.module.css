@@ -1,0 +1,53 @@
+.serviceCTABlock {
+  text-align: center;
+}
+
+.backgroundImg {
+  width: 100%;
+  min-height: 40dvh;
+  background-image: url("src/assets/Images/serviceBottles@2x.webp");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-image: linear-gradient(rgba(0, 0, 0, 0.234)) fill 1;
+}
+
+.block {
+  padding: 4rem 2rem;
+}
+
+.heading {
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-weight: 500;
+}
+
+.text {
+  color: white;
+  margin: 3rem 0;
+  line-height: 1.4;
+}
+
+.ctaButton {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 1rem 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .block {
+    padding: 6rem 3rem;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .text {
+    max-width: 567px;
+  }
+
+  .serviceCTABlock {
+    text-align: left;
+  }
+}

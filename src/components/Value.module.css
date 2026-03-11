@@ -1,0 +1,26 @@
+.valueCard {
+  position: relative;
+  background-color: rgba(4, 73, 177, 0.065);
+  text-align: left;
+  padding: 3rem;
+  border-radius: 10px;
+  /* max-width: 200px; */
+}
+
+.icon {
+  position: absolute;
+  top: -7%;
+  left: 10%;
+  font-size: 2.1em;
+  color: var(--color-brand-hover--1);
+}
+
+.heading {
+  font-weight: 450;
+  margin-bottom: 1em;
+}
+
+.text {
+  line-height: 1.5;
+  font-size: 1.4rem;
+}

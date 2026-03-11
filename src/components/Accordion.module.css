@@ -1,0 +1,8 @@
+.accordion {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+
+  border: 0.1px solid rgba(209, 209, 209, 0.171);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}

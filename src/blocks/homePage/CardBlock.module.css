@@ -1,0 +1,43 @@
+.container {
+  text-align: center;
+}
+
+.heading {
+  position: relative;
+  font-weight: 500;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 120px;
+  height: 2px;
+  background-color: var(--color-brand--1);
+  transform: translateX(-50%);
+}
+
+.tagline {
+  line-height: 1.5;
+  margin: 3rem 0;
+}
+
+.grid {
+  display: grid;
+}
+
+.blockService .grid {
+  gap: 3em;
+}
+
+@media screen and (min-width: 1024px) {
+  .gridCols2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+}

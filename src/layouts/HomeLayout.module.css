@@ -1,0 +1,43 @@
+.bannerHeading {
+  font-size: 2.7rem;
+}
+
+.bannerSubHeading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+@media screen and (min-width: 700px) {
+  .bannerHeading {
+    font-size: 3.3rem;
+  }
+
+  .bannerSubHeading {
+    font-size: 3.7rem;
+  }
+
+  .bannerBtn {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (orientation: portrait) and (min-width: 600px) and (max-width: 900px) {
+  .bannerHeading {
+    font-size: 3.8rem;
+  }
+
+  .bannerSubHeading {
+    font-size: 4.2rem;
+  }
+
+  .bannerText {
+    font-size: 1.8rem;
+  }
+
+  .bannerBtn {
+    padding: 1.2rem 2.5rem;
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,92 @@
+.itemLayout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item {
+  padding: 20px 24px;
+  padding-right: 48px;
+  cursor: pointer;
+  max-width: 500px;
+  border-bottom: 1px solid rgba(209, 209, 209, 0.171);
+
+  position: relative;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  /* padding-bottom: 1rem; */
+  color: var(--color-dark--1);
+  transition: color 0.4s;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.title:hover {
+  color: var(--color-brand-2);
+}
+
+.text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.contentBox {
+  color: var(--color-dark--1);
+
+  margin-top: 1rem;
+  font-size: 1.4rem;
+
+  padding-bottom: 16px;
+  line-height: 1.6;
+
+  /* Smooth transition setup */
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.25s ease,
+    opacity 0.2s ease,
+    padding 0.25s ease;
+}
+
+.contentOpen {
+  max-height: 500px; /* Large enough for content */
+  opacity: 1;
+  padding-bottom: 16px;
+}
+
+.contentClosed {
+  max-height: 0;
+  opacity: 0;
+  padding-bottom: 0;
+}
+
+/* OPEN STATE */
+.open {
+  border-top: 4px solid var(--color-brand-hover--1);
+}
+
+.open,
+.open .title {
+  color: var(--color-brand-hover--1);
+}
+
+@media screen and (min-width: 700px) {
+  .item {
+    max-width: 600px;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .contentBox {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+
+  .contentOpen {
+    max-height: 600px; /* Adjust for larger font size */
+  }
+}

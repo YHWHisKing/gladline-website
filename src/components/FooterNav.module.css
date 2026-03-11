@@ -1,0 +1,45 @@
+.nav {
+  list-style: none;
+}
+
+.navLink {
+  margin: 0.8rem 0;
+}
+
+.navLink a:link,
+.navLink a:visited {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.navLink a:hover {
+  color: white;
+}
+
+.active {
+  border-bottom: 2px solid white;
+  padding-bottom: 3px;
+}
+
+.heading {
+  color: rgb(255, 255, 255);
+
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .navLink a:link,
+  .navLink a:visited {
+    color: rgb(230, 230, 230);
+  }
+
+  .navLink a:hover {
+    color: white;
+  }
+
+  .heading {
+    font-size: 1.9rem;
+  }
+}

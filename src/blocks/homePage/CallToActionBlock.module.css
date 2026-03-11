@@ -1,0 +1,66 @@
+.backgroundImg {
+  width: 100%;
+  min-height: 40dvh;
+  background-image: url("src/assets/Images/callToAction.jpg");
+  background-size: cover;
+  background-position: 46% 50%;
+  background-repeat: no-repeat;
+  border-image: linear-gradient(rgba(0, 0, 0, 0.57)) fill 1;
+}
+
+.callToActionBlock {
+  text-align: center;
+}
+
+.heading {
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.text {
+  line-height: 2;
+  color: white;
+  max-width: 500px;
+  font-size: 1.2rem;
+  margin: 3rem auto;
+}
+
+.ctaButton {
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 1.2rem 2.3rem;
+}
+
+@media screen and (min-width: 700px) {
+  .text {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .heading {
+    font-size: 4rem;
+  }
+
+  .callToActionBlock {
+    padding-top: 4rem;
+  }
+
+  .backgroundImg {
+    min-height: 70vh;
+    background-position: 60% 60%;
+  }
+
+  .text {
+    margin-bottom: 5rem;
+    font-size: 1.5rem;
+  }
+
+  .ctaButton {
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 1.2rem 2.3rem;
+  }
+}

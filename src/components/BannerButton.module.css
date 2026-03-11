@@ -1,0 +1,21 @@
+.btn {
+  padding: 0.9rem 1.6rem;
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--color-light--2);
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+
+  font-family: inherit;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  font-weight: 700;
+  background-color: var(--color-brand--2);
+  transition: all 500ms;
+}
+
+.btn:hover {
+  background-color: var(--color-brand-hover--2);
+}

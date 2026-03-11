@@ -1,0 +1,83 @@
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  padding-top: 3rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeBanner {
+  min-height: 80dvh;
+
+  background-position: 60% 50%;
+  object-fit: cover;
+}
+
+.innerBanner {
+  min-height: 50dvh;
+
+  background-position: center;
+}
+
+.homeBanner,
+.innerBanner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  background-size: cover;
+  color: var(--color-light--1);
+}
+
+.overlay {
+  border-image: linear-gradient(rgba(0, 0, 0, 0.4)) fill 1;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  padding-block: clamp(6rem, 12vh, 12rem);
+
+  text-align: center;
+}
+
+.innerBanner .hero {
+  padding-top: 0;
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    padding-top: 0;
+  }
+
+  .homeBanner {
+    background-position: 50% 20%;
+  }
+
+  .hero {
+    padding-block: clamp(6rem, 12vh, 12rem);
+  }
+}
+
+/* Fix for tablet vertical orientation: reduce padding to center title better */
+@media screen and (orientation: portrait) and (min-width: 600px) and (max-width: 900px) {
+  .homeBanner {
+    min-height: 70dvh;
+  }
+
+  .innerBanner {
+    min-height: 40dvh;
+  }
+
+  .innerBanner .hero {
+    padding-block: clamp(
+      4rem,
+      8vh,
+      6rem
+    ); /* Increased top padding to bring title down more */
+  }
+}
