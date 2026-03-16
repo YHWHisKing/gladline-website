@@ -67,7 +67,6 @@ function ContactForm() {
         reset();
         setFormStatus("success");
       }
-      console.log(response);
     } catch (error) {
       console.error("Error submitting form:", error);
       setFormStatus("error");
@@ -105,14 +104,14 @@ function ContactForm() {
             </FormField>
 
             <FormField label="City (with ZIP)" id="city">
-              <input {...register("city")} id="city" type="number" />
+              <input {...register("city")} id="city" type="number" min="0" />
               {errors.city && (
                 <p className={`${styles.error}`}>{errors.city.message}</p>
               )}
             </FormField>
 
             <FormField label="Phone" id="phone">
-              <input {...register("phone")} id="phone" type="number" />
+              <input {...register("phone")} id="phone" type="number" min="0" />
               {errors.phone && (
                 <p className={`${styles.error}`}>{errors.phone.message}</p>
               )}
@@ -158,6 +157,7 @@ function ContactForm() {
                 className={`${styles.numberInput}`}
                 id="bedrooms"
                 type="number"
+                min="0"
               />
               {errors.bedrooms && (
                 <p className={`${styles.error}`}>{errors.bedrooms.message}</p>
@@ -170,6 +170,7 @@ function ContactForm() {
                 className={`${styles.numberInput}`}
                 id="bathrooms"
                 type="number"
+                min="0"
               />
               {errors.bathrooms && (
                 <p className={`${styles.error}`}>{errors.bathrooms.message}</p>
@@ -221,6 +222,7 @@ function ContactForm() {
                 className={`${styles.numberInput}`}
                 id="size"
                 type="number"
+                min="0"
               />
               {errors.propertySize && (
                 <p className={`${styles.error}`}>

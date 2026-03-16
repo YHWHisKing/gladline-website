@@ -57,6 +57,10 @@
   font-size: 1.3rem;
 }
 
+.retryBtn:hover {
+  background-color: #b40404;
+}
+
 @media screen and (min-width: 700px) {
   .retryBtn {
     padding: 1rem 2rem;

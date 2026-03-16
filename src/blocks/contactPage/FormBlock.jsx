@@ -1,6 +1,5 @@
 import Button from "../../components/Button";
 import ContactForm from "../../components/ContactForm";
-import styles from "./FormBlock.module.css";
 
 function FormBlock() {
   return (

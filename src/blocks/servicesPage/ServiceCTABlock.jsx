@@ -15,7 +15,7 @@ function ServiceCTABlock() {
           we keep your home or workplace clean, fresh, and well cared for.
         </p>
         <Button
-          to="contact"
+          to="/contact"
           variant="primary"
           className={`${styles.ctaButton}`}
         >

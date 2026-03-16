@@ -1,4 +1,4 @@
-import photo from "../../assets/Optimized Photos/06OfficeLounge.webp";
+import photo from "../../assets/Optimized Photos/14DiningRoom.webp";
 import Mission from "../../components/Mission";
 import { missions } from "../../helpers/missionData";
 

@@ -14,6 +14,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import { IconContext } from "react-icons";
+import PageNotFound from "./components/PageNotFound";
 
 function App() {
   // initialize AOS once when the app mounts
@@ -22,7 +23,7 @@ function App() {
       duration: 800,
       once: false, // allows animations to repeat on re-scroll
       mirror: false, // prevents animations from reversing on scroll up (fixes scroll jumping)
-      offset: 120, // trigger animation when element is 120px from bottom of viewport
+      offset: 200, // trigger animation when element is 200px from bottom of viewport
     });
   }, []);
 
@@ -39,6 +40,9 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="services" element={<Services />} />
             <Route path="contact" element={<Contact />} />
+          </Route>
+          <Route>
+            <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>
       </BrowserRouter>
