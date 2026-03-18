@@ -1,6 +1,7 @@
 .block {
   padding: 6rem 2rem;
   padding-bottom: 8rem;
+  max-height: 700px;
 }
 
 .container {
@@ -8,61 +9,53 @@
   text-align: center;
 }
 
-.testimonialBlock {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.carousel {
+:global(.swiper) {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   width: 100%;
+  padding-bottom: 3rem;
 }
 
-.slideHidden {
-  display: none;
-}
-
-.arrow {
+/* for specificity */
+.container :global(.swiper-button-prev) {
+  /* display: none; */
   position: absolute;
-  width: 2.5rem;
-  height: 2.5rem;
-  color: #5b5b5b61;
+  left: 1px;
 }
 
-.arrow:hover {
-  cursor: pointer;
+/* for specificity */
+.container :global(.swiper-button-next) {
+  position: absolute;
+  right: 1px;
 }
 
-.arrowLeft {
-  left: 1rem;
-}
-.arrowRight {
-  right: 1rem;
+:global(.swiper-button-prev),
+:global(.swiper-button-next) {
+  max-width: 20px;
+  height: 20px;
+  color: #8d8c8c;
 }
 
-.indicators {
+:global(.swiper-pagination) {
+  position: absolute; /* make it positionable */
+  bottom: 0; /* distance from bottom of container */
+  left: 50%; /* center horizontally */
+
   display: flex;
-  position: absolute;
-  bottom: 3rem;
+  justify-content: center;
+  z-index: 10; /* stay above slides */
 }
 
-.indicator {
+:global(.swiper-pagination-bullet) {
+  background-color: #4b4b4b;
+}
+
+:global(.swiper-pagination-bullet-active) {
   background-color: var(--color-brand--1);
-  height: 0.5rem;
-  width: 0.5rem;
-  border-radius: 100%;
-  border: none;
-  outline: none;
-  /* box-shadow: 0px 0px 3px #555; */
-  margin: 0 0.2rem;
-  cursor: pointer;
 }
 
-.indicatorInactive {
-  background-color: #5c5c5c61;
+@media screen and (min-width: 768px) {
+  :global(.swiper-button-prev),
+  :global(.swiper-button-next) {
+    height: 30px;
+  }
 }

@@ -1,61 +1,45 @@
 import Testimonial from "../../components/Testimonial";
 import { testamonies } from "../../../data/testamonies.json";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 import {
   IoChevronBackCircleOutline,
   IoChevronForwardCircleOutline,
 } from "react-icons/io5";
 
 import styles from "./TestimonialBlock.module.css";
-import { useState } from "react";
 
 function TestimonialBlock() {
-  const [slide, setSlide] = useState(0);
-
-  function nextSlide() {
-    setSlide((slide) => (slide === testamonies.length - 1 ? 0 : slide + 1));
-  }
-  function previousSlide() {
-    setSlide((slide) => (slide === 0 ? testamonies.length - 1 : slide - 1));
-  }
-
   return (
     <section className={styles.container}>
       <div
-        className={`block restrictContent ${styles.block} ${styles.testimonialBlock} ${styles.carousel}`}
+        className={`block restrictContent ${styles.block} ${styles.testimonialBlock} ${styles.swiper} `}
       >
-        <IoChevronBackCircleOutline
-          className={`${styles.arrow} ${styles.arrowLeft}`}
-          onClick={previousSlide}
-        />
-        {testamonies.map((testimony, i) => (
-          <Testimonial
-            className={
-              slide === i
-                ? `${styles.slide} `
-                : `${styles.slide} ${styles.slideHidden}`
-            }
-            text={testimony.testimony}
-            author={testimony.author}
-            key={i}
-          />
-        ))}
-        <IoChevronForwardCircleOutline
-          className={`${styles.arrow} ${styles.arrowRight}`}
-          onClick={nextSlide}
-        />
-        <span className={`${styles.indicators}`}>
-          {testamonies.map((_, i) => (
-            <button
-              className={
-                slide === i
-                  ? `${styles.indicator} `
-                  : `${styles.indicator} ${styles.indicatorInactive}`
-              }
-              key={i}
-              onClick={() => setSlide(i)}
-            ></button>
+        <Swiper
+          modules={[Navigation, Pagination]}
+          spaceBetween={30}
+          slidesPerView={1}
+          grabCursor={true}
+          speed={600}
+          navigation
+          pagination={{ clickable: true }}
+          loop={true}
+        >
+          {testamonies.map((testimony, i) => (
+            <SwiperSlide key={i}>
+              <Testimonial
+                text={testimony.testimony}
+                author={testimony.author}
+              />
+            </SwiperSlide>
           ))}
-        </span>
+        </Swiper>
       </div>
     </section>
   );
