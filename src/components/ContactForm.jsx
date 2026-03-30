@@ -50,13 +50,30 @@ function ContactForm() {
   });
 
   async function onSubmit(data) {
+    // 🔹 Transform your field names here
+    const formattedData = {
+      "Full Name": data.fullName,
+      Address: data.address,
+      "City (with ZIP)": data.city,
+      Phone: data.phone,
+      Email: data.email,
+      "Type of Residence": data.residence,
+      "Number of Bedrooms": data.bedrooms,
+      "Number of Bathrooms": data.bathrooms,
+      "Additional Rooms": data.rooms,
+      "Cleaning Frequency": data.frequency,
+      "Additional Services": data.service,
+      "Property Size (sq ft)": data.propertySize,
+      "Payment Method": data.paymentMethod,
+    };
+
     try {
       const response = await fetch("https://formspree.io/f/maqdvbbe", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(formattedData),
       });
 
       if (!response.ok) {
