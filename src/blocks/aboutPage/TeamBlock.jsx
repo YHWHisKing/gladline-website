@@ -1,7 +1,7 @@
 import { FaHandSparkles } from "react-icons/fa";
 import TeamMember from "../../components/TeamMember";
 
-import { teamMembers } from "../../helpers/teamMembers";
+// import { teamMembers } from "../../helpers/teamMembers";
 import styles from "./TeamBlock.module.css";
 
 function TeamBlock() {
