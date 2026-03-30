@@ -1,7 +1,3 @@
-import ServiceCard from "../components/ServiceCard";
-
-import { FaHouseUser, FaBuilding } from "react-icons/fa";
-
 import CommitmentBlock from "../blocks/homePage/CommitmentBlock";
 import AccordionBlock from "../blocks/homePage/AccordionBlock";
 import TestimonialBlock from "../blocks/homePage/TestimonialBlock";
