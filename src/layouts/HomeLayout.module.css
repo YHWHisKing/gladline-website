@@ -1,11 +1,15 @@
 .bannerHeading {
-  font-size: 2.7rem;
+  font-size: 3.8rem;
 }
 
 .bannerSubHeading {
-  font-size: 2rem;
+  font-size: 4.2rem;
   margin-bottom: 1rem;
   color: white;
+}
+
+.bannerText {
+  font-size: 1.8rem;
 }
 
 @media screen and (min-width: 700px) {
