@@ -48,7 +48,12 @@ body {
   font-weight: 400;
   color: var(--color-dark--1);
   font-size: 1.5rem;
-  overflow-x: hidden; /* Prevent horizontal scroll caused by animations */
+  /* overflow-x: hidden; Prevent horizontal scroll caused by animations */
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 h1 {
