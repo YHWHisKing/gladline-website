@@ -74,6 +74,10 @@ h6 {
   color: var(--color-brand-hover--2);
 }
 
+p {
+  font-size: 1.6rem;
+}
+
 input:focus-visible,
 button:focus-visible,
 select:focus-visible {
