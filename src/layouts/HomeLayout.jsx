@@ -33,10 +33,9 @@ function HomeLayout() {
         transition={{ duration: 1 }}
       >
         <Outlet />
-
-        <BackToTopButton />
-        <Footer />
       </motion.div>
+      <BackToTopButton />
+      <Footer />
     </>
   );
 }
