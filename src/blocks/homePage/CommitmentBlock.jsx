@@ -48,7 +48,7 @@ function CommitmentBlock() {
         >
           <img
             className={styles.commitmentImg}
-            src="src/assets/Images/blueLatexGloves.jpg"
+            src="src/assets/Images/blueLatexGloves.webp"
             alt=""
           />
         </div>
