@@ -3,6 +3,7 @@ import CommitmentValue from "../../components/CommitmentValue";
 import { FaHandSparkles } from "react-icons/fa";
 
 import styles from "./CommitmentBlock.module.css";
+import commitmentImg from "../../assets/Images/blueLatexGloves.webp";
 import Button from "../../components/Button";
 
 function CommitmentBlock() {
@@ -46,11 +47,7 @@ function CommitmentBlock() {
           data-aos="fade-left"
           data-aos-delay="200"
         >
-          <img
-            className={styles.commitmentImg}
-            src="src/assets/Images/blueLatexGloves.webp"
-            alt=""
-          />
+          <img className={styles.commitmentImg} src={commitmentImg} alt="" />
         </div>
       </div>
     </section>
