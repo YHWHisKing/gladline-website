@@ -5,7 +5,7 @@
 .backgroundImg {
   width: 100%;
   min-height: 40dvh;
-  background-image: url("src/assets/Images/serviceBottles@2x.webp");
+  background-image: url("../../assets/Images/serviceBottles@2x.webp");
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
