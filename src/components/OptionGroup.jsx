@@ -11,10 +11,10 @@ function OptionGroup({
 }) {
   return (
     <fieldset className={`formGroup selectionGroup`}>
-      <legend className={`${styles.checkboxTitle}`}>{legend}</legend>
+      <legend className={`${styles.checkboxTitle}`}>{legend} :</legend>
 
       {options.map((option) => (
-        <label key={option}>
+        <label className={`${styles.label}`} key={option}>
           <input {...register(name)} value={option} type={type} /> {option}
         </label>
       ))}

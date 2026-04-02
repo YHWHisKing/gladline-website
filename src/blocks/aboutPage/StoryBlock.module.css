@@ -13,7 +13,7 @@
 .text {
   margin-top: 1.5rem;
   line-height: 1.7;
-  font-size: 1.4rem;
+  font-size: var(--fs-base);
   max-width: 400px;
 }
 

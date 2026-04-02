@@ -20,7 +20,7 @@
   transform: translateX(-50%);
 }
 .text {
-  font-size: 1.4rem;
+  font-size: var(--fs-base);
   margin-bottom: 3rem;
 }
 

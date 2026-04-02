@@ -40,7 +40,7 @@
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
-  padding-block: clamp(6rem, 12vh, 12rem);
+  padding-block: clamp(4rem, 12vh, 12rem);
 
   text-align: center;
 }

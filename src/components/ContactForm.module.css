@@ -32,7 +32,7 @@ select {
   padding: 2.4rem 3rem;
   border: 1px solid #d1d5db;
   border-radius: var(--border-radius-md);
-  font-size: 1.3rem;
+  font-size: var(--fs-base);
 }
 .grid {
   display: grid;
@@ -53,7 +53,9 @@ select {
   width: 100%;
   max-width: 300px;
   font-weight: 400;
+  font-size: var(--fs-base);
 }
+
 .error {
   color: red;
 }

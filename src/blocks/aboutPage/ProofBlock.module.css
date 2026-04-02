@@ -9,6 +9,7 @@
   margin-top: 2rem;
   margin-bottom: 3rem;
   line-height: 1.6;
+  font-size: var(--fs-base);
 }
 
 .grid {

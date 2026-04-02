@@ -1,9 +1,11 @@
 import { Link, NavLink, useLocation } from "react-router";
-import styles from "./NavBanner.module.css";
-import NavBar from "./NavBar";
-import { bannerImages } from "../helpers/bannerImages";
 import { useEffect } from "react";
 import AOS from "aos";
+
+import NavBar from "./NavBar";
+import { bannerImages } from "../helpers/bannerImages";
+
+import styles from "./NavBanner.module.css";
 
 function NavBanner({ children }) {
   const { pathname } = useLocation();
