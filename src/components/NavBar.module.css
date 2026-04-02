@@ -49,6 +49,12 @@
   color: var(--color-accent);
 }
 
+li a {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem; /* adjust to your liking */
+}
+
 .overlay {
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
