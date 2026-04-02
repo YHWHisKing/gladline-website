@@ -14,7 +14,7 @@
 
 .heading {
   color: white;
-  font-size: 3rem;
+  font-size: var(--fs-xl);
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -23,19 +23,19 @@
   line-height: 2;
   color: white;
   max-width: 500px;
-  font-size: 1.2rem;
+  font-size: var(--fs-base);
   margin: 3rem auto;
 }
 
 .ctaButton {
-  font-size: 1.2rem;
+  font-size: var(--fs-base);
   font-weight: 400;
   padding: 1.2rem 2.3rem;
 }
 
 @media screen and (min-width: 700px) {
   .text {
-    font-size: 1.3rem;
+    font-size: var(--fs-base);
   }
 }
 
