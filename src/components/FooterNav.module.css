@@ -4,6 +4,7 @@
 
 .navLink {
   margin: 0.8rem 0;
+  font-size: var(--fs-base);
 }
 
 .navLink a:link,
@@ -27,6 +28,7 @@
 
   font-weight: 500;
   margin-bottom: 2.5rem;
+  font-size: var(--fs-md);
 }
 
 @media screen and (min-width: 1024px) {

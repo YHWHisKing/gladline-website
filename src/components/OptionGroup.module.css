@@ -1,9 +1,13 @@
 .checkboxTitle {
-  font-size: 1.4rem;
+  font-size: var(--fs-base);
   font-weight: 600;
   margin-bottom: 0.75rem;
 }
 
 .error {
   color: red;
+}
+
+.label {
+  font-size: 1.55rem;
 }

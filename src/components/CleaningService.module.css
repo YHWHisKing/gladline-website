@@ -39,7 +39,7 @@
 
 .text,
 .iconList {
-  font-size: 1.35rem;
+  font-size: var(--fs-base);
 }
 
 .cleaningButton {
@@ -47,7 +47,7 @@
   width: fit-content;
   margin: 2rem auto 0;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: var(--fs-base);
   padding: 1.2rem 2.2rem;
 }
 

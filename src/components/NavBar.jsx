@@ -28,7 +28,7 @@ function NavBar() {
           className={`${styles.navRight} ${open ? styles.show : ""}`}
           aria-hidden={!open}
         >
-          <ul>
+          <ul onClick={() => setOpen(false)}>
             <li>
               <button
                 className={styles.closeButton}

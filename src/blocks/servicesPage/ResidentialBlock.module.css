@@ -8,7 +8,7 @@
 }
 
 .text {
-  font-size: 1.35rem;
+  font-size: var(--fs-base);
   line-height: 1.6;
 }
 

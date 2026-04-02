@@ -20,16 +20,18 @@
   font-family: "Playfair Display", serif;
   color: white;
   font-weight: 500;
+  font-size: var(--fs-lg);
 }
 
 .text {
   color: white;
   margin: 3rem 0;
-  line-height: 1.4;
+  line-height: 1.5;
+  font-size: var(--fs-base);
 }
 
 .ctaButton {
-  font-size: 1.3rem;
+  font-size: var(--fs-base);
   font-weight: 400;
   padding: 1rem 2rem;
 }
