@@ -9,7 +9,7 @@
   text-decoration: none;
 
   font-family: inherit;
-  font-size: 1.5rem;
+  font-size: var(--fs-md);
   margin-top: 2rem;
   font-weight: 700;
   background-color: var(--color-brand--2);
