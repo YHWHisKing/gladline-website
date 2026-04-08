@@ -1,5 +1,9 @@
 .bannerHeading {
+  text-transform: uppercase;
+  font-family: "Source Code Pro", sans-serif;
   font-size: 3.8rem;
+  font-weight: 400;
+  letter-spacing: 0.1px;
 }
 
 .bannerSubHeading {
@@ -43,5 +47,20 @@
   .bannerBtn {
     padding: 1.2rem 2.5rem;
     font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bannerHeading {
+    font-size: 3.6rem;
+  }
+
+  .bannerText {
+    font-size: 2rem;
+  }
+
+  .bannerBtn {
+    padding: 1rem 2rem;
+    font-size: var(--fs-desktop);
   }
 }

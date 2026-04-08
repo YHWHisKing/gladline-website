@@ -19,13 +19,14 @@
   --border-radius-lg: 9px;
 
   /* Typography */
-  --primary-heading: "Playfair Display", serif;
+  --primary-heading: "Source Code Pro", sans-serif;
   --secondary-heading: "Montserrat", sans-serif;
 
   /* Font Sizes */
   --fs-xs: 1.2rem;
   --fs-sm: 1.4rem;
   --fs-base: 1.6rem;
+  --fs-desktop: 1.9rem;
   --fs-md: 2rem;
   --fs-lg: 2.5rem;
   --fs-xl: 3.1rem;
@@ -70,7 +71,7 @@ body {
 }
 
 h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Source Code Pro", sans-serif;
   font-weight: 400;
 }
 

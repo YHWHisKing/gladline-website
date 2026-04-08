@@ -4,10 +4,11 @@ import NavBanner from "../components/NavBanner";
 import BannerButton from "../components/BannerButton";
 import Footer from "../components/Footer";
 
-import styles from "./HomeLayout.module.css";
 import BackToTopButton from "../components/BackToTopButton";
 
 import { motion } from "framer-motion";
+
+import styles from "./HomeLayout.module.css";
 
 function HomeLayout() {
   const location = useLocation();

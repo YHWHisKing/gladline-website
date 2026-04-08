@@ -34,4 +34,12 @@
   .storyImg {
     max-height: 600px;
   }
+
+  .heading {
+    font-size: var(--fs-lg);
+  }
+
+  .text {
+    font-size: var(--fs-desktop);
+  }
 }

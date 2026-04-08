@@ -27,7 +27,7 @@ function TeamBlock() {
             />
           ))} */}
 
-          <p>
+          <p className={`${styles.text}`}>
             At Gladline Cleaning, excellence isn’t just a standard — it’s our
             culture. Our team is made up of dependable, detail‑driven
             professionals who take pride in creating clean, orderly spaces that
@@ -39,7 +39,7 @@ function TeamBlock() {
             don’t rush. We don’t cut corners. We honor your space as if it were
             our own.
           </p>
-          <p>
+          <p className={`${styles.text}`}>
             What sets our team apart is simple: reliability, excellence, and
             genuine care. From punctual arrivals to thorough cleaning routines,
             we make sure every space feels refreshed, organized, and ready for

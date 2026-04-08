@@ -55,11 +55,12 @@
 
   .text {
     margin-bottom: 5rem;
-    font-size: 1.5rem;
+    font-size: var(--fs-desktop);
+    line-height: 1.5;
   }
 
   .ctaButton {
-    font-size: 1.4rem;
+    font-size: var(--fs-desktop);
     font-weight: 400;
     padding: 1.2rem 2.3rem;
   }

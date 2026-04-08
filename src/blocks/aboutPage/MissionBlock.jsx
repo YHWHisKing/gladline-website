@@ -6,7 +6,7 @@ import styles from "./MissionBlock.module.css";
 
 function MissionBlock() {
   return (
-    <section className={`block`} data-aos="fade-up">
+    <section className={styles.block} data-aos="fade-up">
       <div
         className={` restrictContent ${styles.container} ${styles.grid} ${styles.gridCols2}`}
       >
