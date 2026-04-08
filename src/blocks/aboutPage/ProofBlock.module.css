@@ -2,6 +2,7 @@
   text-align: center;
   font-size: var(--fs-md);
   width: justify;
+  font-weight: 600;
 }
 
 .text {
@@ -30,5 +31,15 @@
 
   .text {
     font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .text {
+    font-size: var(--fs-desktop);
   }
 }
