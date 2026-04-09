@@ -18,13 +18,13 @@ function GetInTouchBlock() {
             <h2 className={styles.heading}>Get in Touch</h2>
             <ContactTag
               icon={FaRegBuilding}
-              heading="Meet Us"
+              heading="Contact Us"
               text="4760 Preston Rd. Suite 244-134 Frisco Texas, 75034"
             />
             <ContactTag
               icon={FaPhoneVolume}
-              heading="Call Us"
-              text="214-705-4804 / 469-279-7927"
+              heading="Text/Call Us"
+              text="469-279-7927"
             />
             <ContactTag
               icon={MdMailOutline}

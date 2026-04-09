@@ -35,7 +35,7 @@ function CardBlock() {
         <ServiceCard
           icon={FaBuilding}
           heading="Commercial Cleaning"
-          text="Professional cleaning solutions for offices, retail spaces, and other commercial properties"
+          text="Professional cleaning solutions for offices, retail spaces, and other commercial properties."
           items={[
             "Office cleaning",
             "Retail space maintenance",

@@ -40,7 +40,7 @@
 
 @media screen and (min-width: 700px) {
   .cardBody {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .iconServiceList {
@@ -51,5 +51,28 @@
 @media screen and (min-width: 1024px) {
   .card {
     max-width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardHeading {
+    font-size: 1.9rem;
+  }
+
+  .cardBody {
+    flex: 1;
+  }
+
+  .cardBody > :last-child {
+    margin-top: auto;
+  }
+
+  .cardText {
+    font-size: 1.7rem;
+  }
+
+  .iconServiceList {
+    font-size: 1.5rem;
   }
 }

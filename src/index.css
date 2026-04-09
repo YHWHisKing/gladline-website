@@ -19,8 +19,8 @@
   --border-radius-lg: 9px;
 
   /* Typography */
-  --primary-heading: "Source Code Pro", sans-serif;
-  --secondary-heading: "Montserrat", sans-serif;
+  --primary-heading: "Montserrat", sans-serif;
+  /* --secondary-heading: "Montserrat", sans-serif; */
 
   /* Font Sizes */
   --fs-xs: 1.2rem;
@@ -47,12 +47,11 @@ html {
 
 body {
   font-family:
-    "Roboto",
+    "Montserrat",
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
-    Roboto,
     Oxygen,
     Ubuntu,
     Cantarell,
@@ -71,7 +70,7 @@ body {
 }
 
 h1 {
-  font-family: "Source Code Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 

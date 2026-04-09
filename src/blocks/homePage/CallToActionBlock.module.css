@@ -20,7 +20,7 @@
 }
 
 .text {
-  line-height: 2;
+  line-height: 2.1;
   color: white;
   max-width: 500px;
   font-size: var(--fs-base);
