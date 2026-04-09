@@ -61,7 +61,7 @@
   }
 
   .text {
-    font-size: var(--fs-base);
+    font-size: 1.5rem;
   }
 }
 

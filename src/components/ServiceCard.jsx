@@ -21,7 +21,7 @@ function ServiceCard({
         <h3 className={styles.cardHeading}>{heading}</h3>
       </header>
       <div className={styles.cardBody}>
-        <p>{text}</p>
+        <p className={`${styles.cardText}`}>{text}</p>
 
         <ul className={styles.iconServiceList}>
           {items.map((item) => (

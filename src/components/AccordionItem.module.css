@@ -20,7 +20,7 @@
   /* padding-bottom: 1rem; */
   color: var(--color-dark--1);
   transition: color 0.4s;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 .title:hover {
@@ -37,7 +37,7 @@
 
   margin-top: 1rem;
   font-size: 1.5rem;
-
+  font-style: italic;
   padding-bottom: 16px;
   line-height: 1.6;
 
@@ -88,5 +88,15 @@
 
   .contentOpen {
     max-height: 600px; /* Adjust for larger font size */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .contentBox {
+    font-size: 1.7rem;
   }
 }

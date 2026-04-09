@@ -1,6 +1,7 @@
-import styles from "./Footer.module.css";
 import FooterNav from "./FooterNav";
 import logo from "../assets/Images/WhiteLogoFooter.png";
+
+import styles from "./Footer.module.css";
 
 function Footer() {
   return (
@@ -21,7 +22,7 @@ function Footer() {
               <p>4760 Preston Rd. 244-134</p>
               <p>Frisco, TX 75034</p>
               <p style={{ marginTop: "3rem" }}>
-                <strong>Call us:</strong> (469) 279-7927
+                <strong>Text/Call us:</strong> (469) 279-7927
               </p>
             </div>
           </div>

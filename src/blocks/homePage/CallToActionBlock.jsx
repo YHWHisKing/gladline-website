@@ -10,7 +10,7 @@ function CallToActionBlock() {
         </h2>
         <p className={`${styles.text}`}>
           Whether you’re curious about our services, trading hours or wish to
-          set up a cleaning schedule, feel free to get in contact.
+          set up a cleaning schedule, feel free to get in touch.
         </p>
         <Button
           to="contact"

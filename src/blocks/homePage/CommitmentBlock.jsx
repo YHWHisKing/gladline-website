@@ -2,9 +2,10 @@ import CommitmentValue from "../../components/CommitmentValue";
 
 import { FaHandSparkles } from "react-icons/fa";
 
-import styles from "./CommitmentBlock.module.css";
 import commitmentImg from "../../assets/Images/blueLatexGloves.webp";
 import Button from "../../components/Button";
+
+import styles from "./CommitmentBlock.module.css";
 
 function CommitmentBlock() {
   return (
@@ -13,7 +14,7 @@ function CommitmentBlock() {
         <div data-aos="fade-right" data-aos-delay="500">
           <span className={styles.commitmentIconHeading}>
             <FaHandSparkles style={{ color: "white", verticalAlign: "top" }} />{" "}
-            Why Us
+            Why Us ?
           </span>
           <h3 className={`${styles.commitmentHeading} `}>
             Our Commitment to Excellence
